@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+   
+<body>
+
+    <form action="cadastrar.php" method="post">
+        <!-- DADOS PESSOAIS -->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome completo:</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com"><br>
+
+            <label for="telefone">Telefone (formato (XX)XXXXX-XXXX):</label><br>
+            <input type="tel" id="telefone" name="telefone" placeholder="(11)91234-5678"><br>
+
+            <label for="senha">Crie uma senha:</label><br>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha"><br>
+
+            <label for="idade">Idade:</label><br>
+            <input type="number" id="idade" name="idade" placeholder="Sua idade"><br>
+
+            <label for="estado">Estado de entrega:</label><br>
+            <select id="estado" name="estado">
+                <option>--Selecione seu estado--</option>
+                <option>SP</option>
+                <option>RJ</option>
+                <option>MG</option>
+                <option>RS</option>
+                <option>BA</option>
+                <option>PR</option>
+            </select>
+                <br><br>
+            <label for="cnh">Envie uma foto da sua CNH:</label><br>
+            <input type="file" id="cnh" name="cnh"><br>
+
+        </fieldset>
+
+        <!-- ESCOLHA DO CARRO -->
+        <fieldset>
+            <legend>Escolha do Carro</legend>
+
+            <label>Escolha o modelo:</label><br>
+            <input type="radio" id="seal" name="modelo" value="BYD Seal">
+            <label for="seal">BYD Seal</label><br>
+
+            <input type="radio" id="han" name="modelo" value="BYD Han">
+            <label for="han">BYD Han</label><br>
+
+            <input type="radio" id="song" name="modelo" value="BYD Song Plus">
+            <label for="song">BYD Song Plus</label><br>
+
+            <br><br>
+            <label>Itens adicionais:</label><br>
+            <input type="checkbox" id="som" name="itens" value="Som Premium">
+            <label for="som">Som Premium</label><br>
+
+            <input type="checkbox" id="ar" name="itens" value="Ar-condicionado Digital">
+            <label for="ar">Ar-condicionado Digital</label><br>
+
+            <input type="checkbox" id="camera" name="itens" value="Câmera 360º">
+            <label for="camera">Câmera 360º</label><br>
+
+            <br><br>
+            <label for="cor">Cor do carro:</label><br>
+            <input type="color" id="cor" name="cor" value="#000000"><br><br>
+
+            <label for="intensidade">Intensidade da cor (brilho):</label><br>
+            <input type="range" id="intensidade" name="intensidade" min="0" max="100">
+        </fieldset>
+
+        <!-- ENTREGA -->
+        <fieldset>
+            <legend>Entrega</legend>
+
+            <label for="dataEntrega">Data desejada para entrega:</label><br>
+            <input type="date" id="dataEntrega" name="dataEntrega"><br>
+
+            <label for="horaEntrega">Hora preferida para entrega:</label><br>
+            <input type="time" id="horaEntrega" name="horaEntrega"><br>
+
+            <label for="mesCompra">Mês da compra:</label><br>
+            <input type="month" id="mesCompra" name="mesCompra"><br>
+        </fieldset>
+
+        <!-- SUA OPINIÃO -->
+        <fieldset>
+            <legend>Sua Opinião</legend>
+            <label for="opiniao">Conte qual é a sua expectativa sobre o carro:</label><br>
+            <textarea id="opiniao" name="opiniao" rows="5" cols="50" placeholder="Exemplo: Espero que o carro tenha boa autonomia, seja confortável, silencioso e impressione os vizinhos!"></textarea>
+        </fieldset>
+
+        <!-- AVALIAÇÃO DOS MODELOS -->
+        <fieldset>
+            <legend>Avaliação dos Modelos BYD</legend>
+
+            <label for="avaliacaoDolphin">Avalie o BYD Dolphin Plus:</label><br>
+            <input type="number" id="avaliacaoDolphin" name="avaliacaoDolphin" min="0" max="5" placeholder="0 a 5 estrelas" ><br><br>
+
+            <label for="avaliacaoGS">Avalie o BYD GS:</label><br>
+            <input type="number" id="avaliacaoGS" name="avaliacaoGS" min="0" max="5"  placeholder="0 a 5 estrelas"><br><br>
+
+            <label for="avaliacaoMini">Avalie o BYD Mini:</label><br>
+            <input type="number" id="avaliacaoMini" name="avaliacaoMini" min="0" max="5" placeholder="0 a 5 estrelas"><br><br>
+        </fieldset>
+
+        <!-- BOTÕES -->
+        
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        
+    </form>
+</body>
+</html>
